@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import AddVolunteer from './component/AddVolunteer'
+import ViewVolunteer from './component/ViewVolundeer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
     <BrowserRouter>
     <Routes>
     <Route path="/" element={<AddVolunteer />} />
+    <Route path="/view" element={<ViewVolunteer/>} />
 
 
 
